@@ -21,7 +21,7 @@ The tool is built using Python and leverages several libraries for web scraping,
 ### Tech Stack
 - **Frontend**: Gradio for a minimal, user-friendly single-page web app.
 - **Web Scraping**: `BeautifulSoup` to extract text from `<p>` and `<div>` tags of up to 3 URLs.
-- **Retrieval**: `sentence-transformers` with `all-mpnet-base-v2` for generating embeddings and retrieving the top 2 relevant paragraphs (`top_k=2`).
+- **Retrieval**: `sentence-transformers` with `all-mpnet-base-v2` for generating embeddings and retrieving the top paragraph (`top_k=1`).
 - **Question-Answering**: `transformers` with `distilbert-base-uncased-distilled-squad` for extracting answers from the retrieved context.
 - **Framework**: PyTorch for model inference, with quantization to optimize for CPU.
 - **Deployment**: Hosted on Hugging Face Spaces (free tier, CPU-only).
